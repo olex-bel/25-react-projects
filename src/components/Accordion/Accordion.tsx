@@ -1,5 +1,5 @@
 
-import { useReducer } from "react";
+import { useReducer, useEffect } from "react";
 import { AccordionContext } from "./accordionContext";
 import { accordionReducer, AccordionActionType } from "./accordionReducer";
 import AccordionItem from "./AccordionItem";
@@ -8,7 +8,7 @@ import AccordionContent from "./AccordionContent";
 import type { ReactNode } from "react";
 
 
-type AccordionProps = {
+export type AccordionProps = {
     children?: ReactNode,
     className?: string;
     isMultiSelectionEnabled?: boolean;
@@ -29,6 +29,10 @@ function Accordion({ className, children, isMultiSelectionEnabled = false }: Acc
         toggleItemIdSelection,
         isItemIdSelected,
     }
+
+    useEffect(() => {
+        dispatch({ type: AccordionActionType.SET_MULTI_SELECTION, payload: isMultiSelectionEnabled });
+    }, [isMultiSelectionEnabled]);
 
     return (
         <AccordionContext.Provider value={accordionContextValue}>
