@@ -1,12 +1,14 @@
 
 import Accordion from "./components/Accordion"
 import RandomColor from "./components/RandomColor"
+import Rating from "./components/Rating"
 
 function App() {
 
   return (
     <>
       <div className="w-96 m-4">
+        <Rating />
         <RandomColor />
         <Accordion>
             <Accordion.Item itemId="first-item">
