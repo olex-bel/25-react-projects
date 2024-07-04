@@ -24,6 +24,13 @@ const meta: Meta<typeof ImageSlider> = {
     parameters: {
         layout: 'centered',
     },
+    decorators: [
+        (Story) => (
+            <div className="w-[320px] md:w-[640px]">
+                <Story />
+            </div>
+        )
+    ],
 };
     
 export default meta;

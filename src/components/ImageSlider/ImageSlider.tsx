@@ -30,9 +30,9 @@ export default function ImageSlider({ label, items, className } : ImageSliderPro
     };
 
     return (
-        <section className="relative w-max" aria-labelledby={id}>
+        <section className={`relative max-w-full  ${className? className : ""}`} aria-labelledby={id}>
             <h3 id={id} className="sr-only">{label}</h3>
-            <ul className={`flex overflow-hidden ${className? className : "w-[320px] md:w-[640px]"}`}>
+            <ul className="flex overflow-hidden w-full max-w-full">
                 {
                     items.map(({ url, description }) => 
                         <Slide 

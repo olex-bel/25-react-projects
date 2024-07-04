@@ -15,7 +15,9 @@ const IMAGES = [{
 function App() {
   return (
     <>
-      <ImageSlider label="Test slider" items={IMAGES} />
+      <div className="w-[320px] md:w-[640px]">
+        <ImageSlider label="Test slider" items={IMAGES} />
+      </div>
     </>
   )
 }
