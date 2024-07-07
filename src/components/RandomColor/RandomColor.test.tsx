@@ -5,6 +5,11 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import RandomColor from "./RandomColor";
 
 describe("RandomColor component", () => {
+    it('should render without crashing', () => {
+        render(<RandomColor />);
+        expect(screen).toBeDefined();
+    });
+
     it("should show initial color", () => {
         render(<RandomColor />);
         expect(screen.getByRole("button")).not.toBeDisabled();
