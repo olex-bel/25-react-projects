@@ -13,7 +13,7 @@ export default function LoadMoreProductsDemo() {
                     <main>
                         <div className="w-5/6 mx-auto grid grid-cols-1 md:grid-cols-4">
                             {
-                                items.map((item) => <Product item={item} />)
+                                items.map((item) => <Product key={item.id} item={item} />)
                             }
                         </div>
                         <div className="flex flex-col items-center gap-2 mt-5">
