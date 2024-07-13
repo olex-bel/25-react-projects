@@ -1,10 +1,10 @@
-import DarkModeDemo from "./demo/DarkModeDemo"
+import CustomScrollIndicatorDemo from "./demo/CustomScrollIndicatorDemo"
 
 
 function App() {
   return (
     <>
-      <DarkModeDemo />
+      <CustomScrollIndicatorDemo />
     </>
   )
 }
