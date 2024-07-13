@@ -1,10 +1,10 @@
-import LoadMoreProductsDemo from "./demo/LoadMoreProductsDemo"
+import TreeViewDemo from "./demo/TreeViewDemo"
 
 
 function App() {
   return (
     <>
-      <LoadMoreProductsDemo />
+      <TreeViewDemo />
     </>
   )
 }
