@@ -7,8 +7,8 @@ const meta: Meta<typeof RatingStar> = {
     component: RatingStar,
     tags: ['autodocs'],
     args: {
-        isSelected: false,
-        starIndex: 0,
+        selectedStarIndex: 0,
+        starIndex: 1,
         onStarHover: fn(),
         onStarLeave: fn(),
         onStarSelect: fn(),
@@ -24,6 +24,7 @@ export const Default: Story = {
 
 export const Selected: Story = {
     args: {
-        isSelected: true,
+        selectedStarIndex: 1,
+        starIndex: 1,
     },
 };
