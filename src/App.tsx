@@ -1,10 +1,10 @@
-import TreeViewDemo from "./demo/TreeViewDemo"
+import DarkModeDemo from "./demo/DarkModeDemo"
 
 
 function App() {
   return (
     <>
-      <TreeViewDemo />
+      <DarkModeDemo />
     </>
   )
 }
