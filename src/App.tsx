@@ -1,10 +1,10 @@
-import CustomScrollIndicatorDemo from "./demo/CustomScrollIndicatorDemo"
+import SearchAutocompleteDemo from "./demo/SearchAutocompleteDemo"
 
 
 function App() {
   return (
     <>
-      <CustomScrollIndicatorDemo />
+      <SearchAutocompleteDemo />
     </>
   )
 }
